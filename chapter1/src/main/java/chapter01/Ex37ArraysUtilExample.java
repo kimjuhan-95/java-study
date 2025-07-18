@@ -16,7 +16,7 @@ public class Ex37ArraysUtilExample {
 		int[] arr2 = Arrays.copyOf(arr,  2);
 		System.out.println(Arrays.toString(arr2));
 		
-		Arrays.equals(arr,  arr2);
+		System.out.println(Arrays.equals(arr, arr2));
 		
 		
 		

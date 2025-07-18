@@ -14,8 +14,14 @@ public class Sol {
 		int kor = 80, eng = 75, math = 35;
 		
 		// 평균 구하기
+		int ave = (kor + eng + math) / 3;
 		// 조건식 복합 사용
+		if (ave >= 60 && kor >= 40 && eng >= 40 && math >= 40) {
+			System.out.println("Pass");
 
+	} else {
+		System.out.println("Fail");
 	}
 
+}
 }

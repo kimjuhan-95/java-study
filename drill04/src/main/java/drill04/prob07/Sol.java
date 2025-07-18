@@ -20,8 +20,8 @@ public class Sol {
 		       break;
 		    }
 		    
-		    System.out.print(i++ + "");
-
+		    System.out.print(i);
+		    i++;
 
 		}
 	}

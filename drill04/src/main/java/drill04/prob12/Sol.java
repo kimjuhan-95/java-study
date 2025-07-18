@@ -17,11 +17,21 @@ public class Sol {
 
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
-	    
+	 
 	    System.out.println("숫자를 입력하세요[2 - ] ");
-	    int number = scanner.nextInt();
+	    int n = scanner.nextInt();
+	   
+	    for (int n = 2; n > 0 ; n++) {
+	    	if( n % 2 == 0 || n % 3 == 0 )
+	    		System.out.println("소수가 아닙니다");
+	    	break;
+	    }
+	     else {
+	    	System.out.println("소수입니다");
+	    	break;
+	     	    }
 	    
-	    System.out.println(number);
+	    
 	    
 	    scanner.close();
 	}

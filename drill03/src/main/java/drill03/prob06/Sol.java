@@ -11,11 +11,15 @@ public class Sol {
 
 	public static void main(String[] args) {
 		String name = "admin";
-		// 문자열 비교에는 equals() 사용		
+		// 문자열 비교에는 equals() 사용	
+		if( name.equals("admin")) {
+			System.out.println("관리자입니다");
+		} else {
+			System.out.println("일반 사용자입니다");
+		}
 		
 		//boolean result1 = name == "admin";
-		boolean result = name.equals("admin");
-          System.out.println(result);
+		
 	}
 
 }

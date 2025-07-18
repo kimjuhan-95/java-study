@@ -12,30 +12,11 @@ package drill04.prob11;
 public class Sol {
 
 	public static void main(String[] args) {
-	    int i = 1;
-	    
-	    int dan = 1;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
-		
-		dan = 2;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
-		
-		dan = 3;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
-		
-		
-		System.out.println("");
-		
-		i = 2;
-		
-	    dan = 1;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
-		
-		dan = 2;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
-		
-		dan = 3;
-		System.out.print(dan + " x " + i + " = " + (dan * i) + "\t");
+	    for ( int i = 1; i <= 9 ; i++) {
+	    	for ( int a = 1; a <= 9; a++) {
+	    		System.out.println(i +" * " + a + " =" + (i*a) );
+	    	}
+	    }
 		
 		
 		

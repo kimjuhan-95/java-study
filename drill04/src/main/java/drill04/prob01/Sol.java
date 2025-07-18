@@ -14,7 +14,7 @@ public class Sol {
 		int i = 0;
 		while(i < 5) {
 		
-			System.out.println("i = " + (i + 1));
+			System.out.println(i+1);
 			i++;
 		}
 	}
