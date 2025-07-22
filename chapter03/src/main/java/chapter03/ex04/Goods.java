@@ -1,7 +1,7 @@
 package chapter03.ex04;
 
 public class Goods {
-	
+	static int countOfGoods;
 		private String name;
 		private int  price;
 		private int countStock;

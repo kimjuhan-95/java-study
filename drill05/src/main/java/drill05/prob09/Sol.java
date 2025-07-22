@@ -9,9 +9,18 @@ public class Sol {
 		Scanner scanner = new Scanner(System.in);
 		int[] numbers = new int[5];
 		
-		/* 코드 작성 */
+		System.out.println("정수 입력: ");
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = scanner.nextInt();
+			
+		}
 		
-		System.out.println(Arrays.toString(numbers));
+		int temp = numbers[0];
+		numbers[0] = numbers[numbers.length - 1];
+		numbers[numbers.length - 1] = temp;
+		
+		
+		System.out.println("교환 후: " + Arrays.toString(numbers));
 		scanner.close();
 	}
 
