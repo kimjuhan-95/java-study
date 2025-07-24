@@ -5,5 +5,10 @@ public class Canvas {
 		point.show();
 		
 	}
+	public void drawColorPoint(ColorPoint colorpoint) {
+		colorpoint.show();
+		
+	}
+
 
 }
