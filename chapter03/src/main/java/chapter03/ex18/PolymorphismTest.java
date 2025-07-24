@@ -1,0 +1,34 @@
+package chapter03.ex18;
+
+public class PolymorphismTest {
+	static class Animal {
+		private String species;
+		
+		public void sound() {
+			System.out.println("구현불능");
+			
+		}
+		
+	}
+	
+	static class Dog extends Animal {
+		public void sound() {
+			System.out.println("멍멍");
+			
+		}
+	}
+
+	static class sparrow extends Animal {
+		public void sound() {
+			System.out.println("쨱쨱");
+		}
+	}
+			
+
+	public static void main(String[] args) {
+		Animal a1 = new Dog();
+		
+		a1.sound();
+
+}
+}

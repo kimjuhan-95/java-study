@@ -11,4 +11,12 @@ public class Canvas {
 	}
 
 
+
+
+
+public void draw(Drawable drawable) {
+	drawable.draw();
+	
+
+}
 }
