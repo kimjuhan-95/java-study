@@ -12,6 +12,10 @@ public class StudentTest {
 		
 		Person p2 = new Student();          // Upcasting!!!,다형성   
         p2.setName("마이콜");
+        
+        Student s2 = (Student)p2;           // Downcasting(명시적, Explicity)
+        s2.setSchool("Java School");        //또는
+        ((Student)p2).setSchool("Java School");  // Downcasting(명시적, Explicity)
 
 	}
 
