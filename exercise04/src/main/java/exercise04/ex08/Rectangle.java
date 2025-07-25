@@ -19,6 +19,8 @@ public class Rectangle extends Shape implements Resizable {
 
 	@Override
 	public void resize(double rate) {
+		width = width * rate;
+		height = height * rate;
 		
 
 	}

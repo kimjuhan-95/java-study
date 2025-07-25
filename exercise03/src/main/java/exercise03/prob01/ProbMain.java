@@ -10,9 +10,17 @@ public class ProbMain {
 
 		Goods[] goods = new Goods[COUNT_GOODS];
 
-		// 상품 입력
+		for (int i = 0; i < COUNT_GOODS; i++) {
+			String name = scanner.next();
+			int price = scanner.nextInt();
+			int stock = scanner.nextInt();
+			
+			goods[i] = new Goods(name, price, stock);
+		}
 
-		// 상품 출력
+		for (int i = 0; i <COUNT_GOODS; i++) {
+			goods[i].printInfo();
+		}
 		
 		scanner.close();
 	}
