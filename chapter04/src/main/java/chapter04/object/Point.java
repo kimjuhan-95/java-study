@@ -1,8 +1,8 @@
 package chapter04.object;
 
-import com.bit2025.paint.text.Drawble;
+import java.util.Objects;
 
-public class Point implements Drawble {
+public class Point {
 	private int x;
 	private int y;
 	
@@ -13,27 +13,6 @@ public class Point implements Drawble {
 		this.x = x;
 		this.y = y;
 	}
-	
-	@Override
-	public void draw() {
-		show();
-	}
-	
-	public void show() {
-		System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다.");
-	}
-
-	public void show(boolean visible) {
-		if(visible) {
-			show();
-		} else {
-			System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
-		}
-	}
-	
-//	public void disappear() {
-//		System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
-//	}
 	
 	public int getX() {
 		return x;
@@ -46,5 +25,28 @@ public class Point implements Drawble {
 	}
 	public void setY(int y) {
 		this.y = y;
+	}
+	
+	@Override
+	public int hashCode() {
+		// 객체의 내용(x, y) 기반의 해싱값
+		return Objects.hash(x, y);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Point other = (Point) obj;
+		return x == other.x && y == other.y;
+	}
+
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
 	}
 }

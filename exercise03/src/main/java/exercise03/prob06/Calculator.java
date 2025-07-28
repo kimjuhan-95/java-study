@@ -27,15 +27,27 @@ public class Calculator {
 			
 			switch(tokens[1]) {
 				case "+": {
+					Add add = new Add();
+					add.setValue(lValue, rValue);
+					System.out.println(">> " + add.calculate());
 					break;
 				}
 				case "-" : {
+					Sub sub = new Sub();
+					sub.setValue(lValue, rValue);
+					System.out.println(">> " + sub.calculate());
 					break;
 				}
 				case "*" : {
+					Mul mul = new Mul();
+					mul.setValue(lValue, rValue);
+					System.out.println(">> " + mul.calculate());
 					break;					
 				}
 				case "/" : {
+					Div div = new Div();
+					div.setValue(lValue, rValue);
+					System.out.println(">> " + div.calculate());
 					break;
 				}
 				default :  {
