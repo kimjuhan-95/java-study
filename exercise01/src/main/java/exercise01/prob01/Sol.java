@@ -10,6 +10,10 @@ public class Sol {
 		System.out.print("정수: ");
 		int n = scanner.nextInt();
 		
+		int abs = Math.abs(n);
+		System.out.println("절대값: " + abs);
+		
+		
 		
 		scanner.close();
 	}

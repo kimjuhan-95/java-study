@@ -11,10 +11,19 @@ public class Sol {
 		for (int i = 0; i < count; i++) {
 			System.out.print(data[i] + " ");
 		}
+		
+		for (int i = 0; i < count - 1; i++) {
+			for (int j = 0; j < count - 1 - i; j++) {
+				if (data[j] < data[j+1]) {
+					int temp = data[j];
+					data[j] = data[j + 1];
+					data[j + 1] = temp;
+				}
+			}
+		}
 
-		//
-		// 정렬 알고리즘이 적용된 코드를 여기에 작성합니다.
-		//
+		
+		
 		
 
 		System.out.println("\nAfter Sort.");

@@ -16,16 +16,16 @@
 	</properties>
 
 	<modules>
-		<module>chapter1</module>
+		<!--module>chapter01</module!-->
 		<module>drill01</module>
 		<module>drill02</module>
 		<module>drill03</module>
-		<module>drill04</module>
+		<!--module>drill04</module!-->
 		<module>drill05</module>
 		<module>exercise01</module>
 		<module>exercise02</module>
-		<module>chapter03</module>
-		<module>drill06</module>
+		<!--module>chapter03</module!-->
+		<!--module>drill06</module!-->
 		<module>exercise03</module>
 		<module>exercise04</module>
 		<module>chapter04</module>
